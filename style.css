@@ -10,18 +10,34 @@ body {
 
 }
 
+.success-block {
+	min-width: 40vw;
+	min-height: 5vh;
+	text-align: center;
+	background-color: #3f51b58c;
+	border-radius: 15px;
+	animation: fadein forwards .2s;
+	display: none;
+}
+.success-show {
+	display: block;
+}
+
 .wrapper {
 	width: 56vw;
 	height: 67vh;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	background-color: #3f51b58c;
-	/* background-color: #2195f35b; */
 	border-radius: 15px;
 	justify-content: center;
 	animation: fadein forwards .2s;
+}
+
+.wrapper-show {
+	display: flex;
 }
 
 .logo {
