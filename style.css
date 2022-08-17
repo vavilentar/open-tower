@@ -21,11 +21,14 @@ body {
 	/* background-color: #2195f35b; */
 	border-radius: 15px;
 	justify-content: center;
+	animation: fadein forwards .2s;
 }
 
 .logo {
+	opacity: 0;
 	width: 10vw;
 	margin: 10px 0;
+	animation: fadein forwards .7s;
 }
 
 .title {
@@ -34,6 +37,8 @@ body {
 	font-family: Montserrat;
 	font-weight: 500;
 	width: 50vw;
+	animation: fadein forwards .8s;
+
 }
 
 .form {
@@ -49,11 +54,13 @@ body {
 	margin: 5px 0;
 	border: 2px solid #3f51b5;
 	border-radius: 5px;
+	animation: fadein forwards 1s;
 }
 
 .label {
 	font-family: Montserrat;
 	color: white;
+	animation: fadein forwards 1s;
 }
 
 .btn-sb {
@@ -66,6 +73,7 @@ body {
 	font-family: Montserrat;
 	color: white;
 	cursor: pointer;
+	animation: fadein forwards 1.2s;
 }
 
 span {
@@ -104,5 +112,14 @@ span {
 @media (max-width: 321px) {
 	.title {
 		font-size: 12px;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
